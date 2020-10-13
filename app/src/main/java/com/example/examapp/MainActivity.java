@@ -17,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button btn_1 = findViewById(R.id.btn_1);
+        Button btn_2 = findViewById(R.id.btn_2);
+        Button btn_3 = findViewById(R.id.btn_3);
+        Button btn_4 = findViewById(R.id.btn_4);
+        
         btn_1.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -27,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button btn_2 = findViewById(R.id.btn_2);
+
+
         btn_2.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -38,18 +43,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button btn_3 = findViewById(R.id.btn_3);
+
         btn_3.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
+
                 Log.e("!@#", "My awesome btn3 been pressed");
                 Toast.makeText(getApplicationContext(), "Ты нажал на кнопку 3", Toast.LENGTH_LONG).show();
 
             }
         });
 
-        Button btn_4 = findViewById(R.id.btn_4);
+
         btn_4.setOnClickListener(new View.OnClickListener() {
 
             @Override
